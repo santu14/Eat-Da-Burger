@@ -1,10 +1,9 @@
-
 const connection = require("./connection.js");
 
 function printQuestionMarks(num) {
   let arr = [];
 
-  for ( i = 0; i < num; i++) {
+  for (i = 0; i < num; i++) {
     arr.push("?");
   }
 
@@ -12,7 +11,6 @@ function printQuestionMarks(num) {
 }
 
 const objToSql = (ob) => {
-  
   let arr = [];
 
   for (let key in ob) {
@@ -20,7 +18,7 @@ const objToSql = (ob) => {
   }
 
   return arr.toString();
-}
+};
 
 const orm = {
   all: (tableInput, cb) => {
@@ -68,7 +66,7 @@ const orm = {
       }
       cb(result);
     });
-  }
+  },
 };
 
 module.exports = orm;
