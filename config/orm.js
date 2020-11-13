@@ -1,14 +1,14 @@
-const connection = require("./connection.js");
+var connection = require("./connection.js");
 
-function printQuestionMarks(num) {
+const printQuestionMarks = (num) => {
   let arr = [];
 
-  for (i = 0; i < num; i++) {
+  for (let i = 0; i < num; i++) {
     arr.push("?");
   }
 
   return arr.toString();
-}
+};
 
 const objToSql = (ob) => {
   let arr = [];
@@ -22,7 +22,7 @@ const objToSql = (ob) => {
 
 const orm = {
   all: (tableInput, cb) => {
-    var queryString = "SELECT * FROM " + tableInput + ";";
+    let queryString = "SELECT * FROM " + tableInput + ";";
     connection.query(queryString, (err, result) => {
       if (err) {
         throw err;

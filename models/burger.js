@@ -2,7 +2,7 @@ const orm = require("../config/orm.js");
 
 const burger = {
   all: (cb) => {
-    orm.all("burgers", function(res) {
+    orm.all("burgers", (res) => {
       cb(res);
     });
   },
@@ -14,7 +14,7 @@ const burger = {
     ], cb);
   },
   update: (id, cb) => {
-    var condition = "id=" + id;
+    let condition = "id=" + id;
     orm.update("burgers", {
       devoured: true
     }, condition, cb);

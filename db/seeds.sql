@@ -1,3 +1,3 @@
-INSERT INTO burgers (burger_name, devoured) VALUES ('Big Burgie', FALSE);
-INSERT INTO burgers (burger_name, devoured) VALUES ('Lil Burgie', FALSE);
-INSERT INTO burgers (burger_name, devoured) VALUES ('Monster Burgie', FALSE);
+INSERT INTO burgers (burger_name, devoured) VALUES ('Cheese Burger', FALSE);
+INSERT INTO burgers (burger_name, devoured) VALUES ('Hamburger', FALSE);
+INSERT INTO burgers (burger_name, devoured) VALUES ('Pizza Burger', FALSE);
