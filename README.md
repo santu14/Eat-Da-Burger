@@ -1,5 +1,5 @@
 
-# Eat the burger     [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+# Eat da burger     [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 
 This application allows the user to input new burgers and select wich burgers to "devour" which will move the burger to the right hand side. This application uses express mysql and handlebars
     
